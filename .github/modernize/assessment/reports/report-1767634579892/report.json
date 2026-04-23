@@ -1,0 +1,394 @@
+{
+  "version": "1.0.0",
+  "producer": "Java AppCAT CLI",
+  "metadata": {
+    "analysisStartTime": "2026-01-05T17:36:19.8927912Z",
+    "analysisEndTime": "2026-01-05T17:37:49.805014Z",
+    "privacyMode": "Protected",
+    "privacyModeHelpUrl": "https://aka.ms/appcat-privacy-mode",
+    "targetIds": [
+      "azure-aks",
+      "azure-appservice",
+      "azure-container-apps"
+    ],
+    "targetDisplayNames": [
+      "Azure Kubernetes Service",
+      "Azure App Service",
+      "Azure Container Apps"
+    ],
+    "capabilities": [],
+    "os": [],
+    "id": "1767634579892",
+    "name": "Report_202601051236",
+    "status": "completed",
+    "domains": [
+      "cloud-readiness",
+      "java-upgrade"
+    ],
+    "mode": "issue-only"
+  },
+  "summary": {
+    "totalProjects": 1,
+    "totalIssues": 3,
+    "totalIncidents": 10,
+    "totalEffort": 28,
+    "charts": {
+      "severity": {
+        "mandatory": 1,
+        "optional": 0,
+        "potential": 9,
+        "information": 0
+      },
+      "category": {
+        "containerization": 1,
+        "desktop-gui-migration": 9
+      }
+    },
+    "security": {}
+  },
+  "projects": [
+    {
+      "path": ".",
+      "issues": 3,
+      "storyPoints": 28,
+      "properties": {
+        "appName": "GestorFx",
+        "jdkVersion": "21",
+        "frameworks": null,
+        "languages": [
+          "Java"
+        ],
+        "tools": [
+          "Maven"
+        ]
+      },
+      "incidents": [
+        {
+          "ruleId": "web-11000",
+          "incidentId": "96692702-d38e-4e88-aac1-87b7c7f78020",
+          "location": "Gestorfx/lib/openjfx-25.0.1_windows-x64_bin-sdk/javafx-sdk-25.0.1/lib/javafx-swt.jar",
+          "locationKind": "File",
+          "targets": {
+            "azure-aks": {
+              "effort": 3,
+              "severity": "potential"
+            },
+            "azure-appservice": {
+              "effort": 3,
+              "severity": "potential"
+            },
+            "azure-container-apps": {
+              "effort": 3,
+              "severity": "potential"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=cloud-readiness"
+          ]
+        },
+        {
+          "ruleId": "web-11000",
+          "incidentId": "315e38dd-5db6-4d90-893a-646833e3a04e",
+          "location": "Gestorfx/lib/openjfx-25.0.1_windows-x64_bin-sdk/javafx-sdk-25.0.1/lib/javafx.base.jar",
+          "locationKind": "File",
+          "targets": {
+            "azure-aks": {
+              "effort": 3,
+              "severity": "potential"
+            },
+            "azure-appservice": {
+              "effort": 3,
+              "severity": "potential"
+            },
+            "azure-container-apps": {
+              "effort": 3,
+              "severity": "potential"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=cloud-readiness"
+          ]
+        },
+        {
+          "ruleId": "web-11000",
+          "incidentId": "d483a04f-a23e-48dd-8d27-39f44106ee2a",
+          "location": "Gestorfx/lib/openjfx-25.0.1_windows-x64_bin-sdk/javafx-sdk-25.0.1/lib/javafx.controls.jar",
+          "locationKind": "File",
+          "targets": {
+            "azure-aks": {
+              "effort": 3,
+              "severity": "potential"
+            },
+            "azure-appservice": {
+              "effort": 3,
+              "severity": "potential"
+            },
+            "azure-container-apps": {
+              "effort": 3,
+              "severity": "potential"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=cloud-readiness"
+          ]
+        },
+        {
+          "ruleId": "web-11000",
+          "incidentId": "3cfbfa1c-4f7d-4dc7-b848-95f358901a99",
+          "location": "Gestorfx/lib/openjfx-25.0.1_windows-x64_bin-sdk/javafx-sdk-25.0.1/lib/javafx.fxml.jar",
+          "locationKind": "File",
+          "targets": {
+            "azure-aks": {
+              "effort": 3,
+              "severity": "potential"
+            },
+            "azure-appservice": {
+              "effort": 3,
+              "severity": "potential"
+            },
+            "azure-container-apps": {
+              "effort": 3,
+              "severity": "potential"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=cloud-readiness"
+          ]
+        },
+        {
+          "ruleId": "web-11000",
+          "incidentId": "619daf48-509e-4f3b-8eb1-ec742d6db3fa",
+          "location": "Gestorfx/lib/openjfx-25.0.1_windows-x64_bin-sdk/javafx-sdk-25.0.1/lib/javafx.graphics.jar",
+          "locationKind": "File",
+          "targets": {
+            "azure-aks": {
+              "effort": 3,
+              "severity": "potential"
+            },
+            "azure-appservice": {
+              "effort": 3,
+              "severity": "potential"
+            },
+            "azure-container-apps": {
+              "effort": 3,
+              "severity": "potential"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=cloud-readiness"
+          ]
+        },
+        {
+          "ruleId": "web-11000",
+          "incidentId": "97b1a409-7314-48cd-bccb-3a490635415f",
+          "location": "Gestorfx/lib/openjfx-25.0.1_windows-x64_bin-sdk/javafx-sdk-25.0.1/lib/javafx.media.jar",
+          "locationKind": "File",
+          "targets": {
+            "azure-aks": {
+              "effort": 3,
+              "severity": "potential"
+            },
+            "azure-appservice": {
+              "effort": 3,
+              "severity": "potential"
+            },
+            "azure-container-apps": {
+              "effort": 3,
+              "severity": "potential"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=cloud-readiness"
+          ]
+        },
+        {
+          "ruleId": "web-11000",
+          "incidentId": "14c33e75-21cd-48fa-8ebb-d63adbfdf054",
+          "location": "Gestorfx/lib/openjfx-25.0.1_windows-x64_bin-sdk/javafx-sdk-25.0.1/lib/javafx.swing.jar",
+          "locationKind": "File",
+          "targets": {
+            "azure-aks": {
+              "effort": 3,
+              "severity": "potential"
+            },
+            "azure-appservice": {
+              "effort": 3,
+              "severity": "potential"
+            },
+            "azure-container-apps": {
+              "effort": 3,
+              "severity": "potential"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=cloud-readiness"
+          ]
+        },
+        {
+          "ruleId": "web-11000",
+          "incidentId": "225f4f7c-1f2b-47f7-82be-03fcf1ec891a",
+          "location": "Gestorfx/lib/openjfx-25.0.1_windows-x64_bin-sdk/javafx-sdk-25.0.1/lib/javafx.web.jar",
+          "locationKind": "File",
+          "targets": {
+            "azure-aks": {
+              "effort": 3,
+              "severity": "potential"
+            },
+            "azure-appservice": {
+              "effort": 3,
+              "severity": "potential"
+            },
+            "azure-container-apps": {
+              "effort": 3,
+              "severity": "potential"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=cloud-readiness"
+          ]
+        },
+        {
+          "ruleId": "web-10000",
+          "incidentId": "7b10c58f-d9fc-4c57-a451-42033d4ef7c1",
+          "location": "Gestorfx/lib/openjfx-25.0.1_windows-x64_bin-sdk/javafx-sdk-25.0.1/lib/javafx.swing.jar",
+          "locationKind": "File",
+          "targets": {
+            "azure-aks": {
+              "effort": 3,
+              "severity": "potential"
+            },
+            "azure-appservice": {
+              "effort": 3,
+              "severity": "potential"
+            },
+            "azure-container-apps": {
+              "effort": 3,
+              "severity": "potential"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=cloud-readiness"
+          ]
+        },
+        {
+          "ruleId": "dockerfile-00000",
+          "incidentId": "ef3f52a0-04a6-4403-ae0d-dcc33dae0067",
+          "location": "",
+          "locationKind": "",
+          "targets": {
+            "azure-aks": {
+              "effort": 1,
+              "severity": "mandatory"
+            },
+            "azure-container-apps": {
+              "effort": 1,
+              "severity": "mandatory"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=cloud-readiness"
+          ]
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "dockerfile-00000": {
+      "id": "dockerfile-00000",
+      "description": "No Dockerfile was found in the project. This suggests the application may not yet be containerized. \nConsider creating a Dockerfile to enable container-based replatforming to Azure services such as Azure Container Apps or AKS.",
+      "title": "No Dockerfile found",
+      "severity": "mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://www.baeldung.com/java-dockerize-app",
+          "title": "Dockerizing a Java Application"
+        }
+      ],
+      "labels": [
+        "target=azure-aks",
+        "target=azure-container-apps",
+        "capability=containerization",
+        "source",
+        "domain=cloud-readiness",
+        "category=containerization",
+        "containerization",
+        "os=windows",
+        "os=linux"
+      ]
+    },
+    "web-10000": {
+      "id": "web-10000",
+      "description": "The application uses Java Swing for the graphical user interface.\n Java Swing requires the JRE on the remote device.\n\n * **Containerize** the Java Swing application: Build the Docker image so that it packages the application and the JRE, and push it to Azure Container Registry (ACR). Then you can deploy the container to Azure using Azure Container Instances (ACI), Azure Container Apps (ACA) or Azure Kubernetes Service (AKS).\n\n * **Leverage Azure Virtual Machines (VMs)**: Create a Windows or Linux-based Azure VM with the appropriate configuration for hosting your Java Swing application. For this, install the required Java Development Kit (JDK) and Java Swing runtime on the Azure VM.\n\n * **Consider performance**: Java Swing applications require the GUI to be rendered, which may bring performance and scalability limitations. Also check the networking requirements when selecting the appropriate Azure service for your Java Swing application.",
+      "title": "Java Swing usage",
+      "severity": "potential",
+      "effort": 3,
+      "links": [
+        {
+          "url": "https://learn.microsoft.com/azure/container-registry",
+          "title": "Azure Container Registry documentation"
+        },
+        {
+          "url": "https://learn.microsoft.com/azure/container-instances",
+          "title": "Azure Container Instances documentation"
+        },
+        {
+          "url": "https://learn.microsoft.com/azure/container-apps/overview",
+          "title": "Azure Container Apps documentation"
+        }
+      ],
+      "labels": [
+        "target=azure-aks",
+        "target=azure-container-apps",
+        "target=azure-appservice",
+        "source",
+        "domain=cloud-readiness",
+        "category=desktop-gui-migration",
+        "os=windows",
+        "os=linux"
+      ]
+    },
+    "web-11000": {
+      "id": "web-11000",
+      "description": "The application uses JavaFX for the graphical user interface.\n JavaFX requires the JRE on the remote device.\n\n * **Containerize** the JavaFX application: Build the Docker image so that it packages the application and the JRE, and push it to Azure Container Registry (ACR). Then you can deploy the container to Azure using Azure Container Instances (ACI), Azure Container Apps (ACA) or Azure Kubernetes Service (AKS).\n\n * **Leverage Azure Virtual Machines (VMs)**: Create a Windows or Linux-based Azure VM with the appropriate configuration for hosting your JavaFX application. For this, install the required Java Development Kit (JDK) and JavaFX runtime on the Azure VM.\n\n * **Consider performance**: JavaFX applications require the GUI to be rendered, which may bring performance and scalability limitations. Also check the networking requirements when selecting the appropriate Azure service for your JavaFX application.",
+      "title": "JavaFX usage",
+      "severity": "potential",
+      "effort": 3,
+      "links": [
+        {
+          "url": "https://learn.microsoft.com/azure/container-registry",
+          "title": "Azure Container Registry documentation"
+        },
+        {
+          "url": "https://learn.microsoft.com/azure/container-instances",
+          "title": "Azure Container Instances documentation"
+        },
+        {
+          "url": "https://learn.microsoft.com/azure/container-apps/overview",
+          "title": "Azure Container Apps documentation"
+        }
+      ],
+      "labels": [
+        "target=azure-aks",
+        "target=azure-container-apps",
+        "target=azure-appservice",
+        "source",
+        "domain=cloud-readiness",
+        "category=desktop-gui-migration",
+        "os=windows",
+        "os=linux"
+      ]
+    }
+  },
+  "security": []
+}

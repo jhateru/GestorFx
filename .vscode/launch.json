@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch GestorFX",
+            "request": "launch",
+            "mainClass": "com.nav.App",
+            "projectName": "gestorfx",
+            // Asegúrate de que los JARs de JavaFX estén en la carpeta 'Gestorfx/lib'
+            "modulePaths": [
+                "${workspaceFolder}/Gestorfx/lib"
+            ],
+            "vmArgs": "--add-modules=javafx.controls,javafx.fxml",
+            "console": "integratedTerminal"
+        },
+    ]
+}
