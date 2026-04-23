@@ -1,0 +1,2 @@
+# GestorFx
+Aplicacion basico
